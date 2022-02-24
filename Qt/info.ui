@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>info</class>
+ <widget class="QDialog" name="info">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>512</width>
+    <height>496</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="minimumSize">
+      <size>
+       <width>500</width>
+       <height>80</height>
+      </size>
+     </property>
+     <row>
+      <property name="text">
+       <string>Istanze trovate</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>Caratteri</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Caratteri senza spazi</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Frasi</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Paragrafi</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Parole</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <widget class="QChartView" name="graphicsView">
+     <property name="minimumSize">
+      <size>
+       <width>400</width>
+       <height>400</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header>QtCharts</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
